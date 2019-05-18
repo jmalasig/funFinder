@@ -12,6 +12,7 @@
 		181B0B3E2290996400687277 /* funFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 181B0B3C2290996400687277 /* funFinder.xcdatamodeld */; };
 		181B0B402290996500687277 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181B0B3F2290996500687277 /* Assets.xcassets */; };
 		181B0B432290996500687277 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181B0B412290996500687277 /* LaunchScreen.storyboard */; };
+		181B0B4B2290A52700687277 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181B0B4A2290A52700687277 /* AddPhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		181B0B3F2290996500687277 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		181B0B422290996500687277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		181B0B442290996500687277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		181B0B4A2290A52700687277 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				181B0B352290996400687277 /* AppDelegate.swift */,
 				181B0B392290996400687277 /* Main.storyboard */,
+				181B0B4A2290A52700687277 /* AddPhotoViewController.swift */,
 				181B0B3F2290996500687277 /* Assets.xcassets */,
 				181B0B412290996500687277 /* LaunchScreen.storyboard */,
 				181B0B442290996500687277 /* Info.plist */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				181B0B362290996400687277 /* AppDelegate.swift in Sources */,
+				181B0B4B2290A52700687277 /* AddPhotoViewController.swift in Sources */,
 				181B0B3E2290996400687277 /* funFinder.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
