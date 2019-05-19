@@ -13,7 +13,7 @@
         <!--funFinder-->
         <scene sceneID="ieA-70-akb">
             <objects>
-                <tableViewController id="rae-cC-AN6" sceneMemberID="viewController">
+                <tableViewController id="rae-cC-AN6" customClass="PhotoTableViewController" customModule="funFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6m5-YG-hTX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,6 +34,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="funFinder" id="Y7E-d0-0YY">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="rIX-Vq-S75"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="R92-lL-Qh0">
                             <connections>
                                 <segue destination="vMj-ab-U8l" kind="show" id="RTj-az-Ibo"/>
@@ -69,11 +70,6 @@
                                     <action selector="photoLibraryTapped:" destination="vMj-ab-U8l" eventType="touchUpInside" id="A0Z-HQ-BLy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfW-Gm-XlI">
-                                <rect key="frame" x="174" y="379" width="66" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Save"/>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="sZa-R5-7pc">
                                 <rect key="frame" x="87" y="137" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -93,12 +89,21 @@
                                     <action selector="albumsTapped:" destination="vMj-ab-U8l" eventType="touchUpInside" id="J11-Zc-5B5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJt-CW-JRc">
+                                <rect key="frame" x="190" y="370" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="savePhotoTapped:" destination="vMj-ab-U8l" eventType="touchUpInside" id="fO4-QR-SS3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="CCa-Fw-Jpa"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Photo" id="dNs-28-vl7"/>
                     <connections>
+                        <outlet property="captionText" destination="LDy-vR-wjK" id="e8m-bs-Rmp"/>
                         <outlet property="imageView" destination="sZa-R5-7pc" id="ob4-GL-HID"/>
                     </connections>
                 </viewController>
