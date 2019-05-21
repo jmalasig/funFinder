@@ -12,12 +12,12 @@
 		181B0B3E2290996400687277 /* funFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 181B0B3C2290996400687277 /* funFinder.xcdatamodeld */; };
 		181B0B402290996500687277 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181B0B3F2290996500687277 /* Assets.xcassets */; };
 		181B0B432290996500687277 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181B0B412290996500687277 /* LaunchScreen.storyboard */; };
-		181B0B4B2290A52700687277 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181B0B4A2290A52700687277 /* AddPhotoViewController.swift */; };
 		18F669622290D5C700E93110 /* PhotoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F669612290D5C700E93110 /* PhotoTableViewController.swift */; };
+		18FA74892293BA1800F0F3F6 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181B0B4A2290A52700687277 /* AddPhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		181B0B322290996400687277 /* funFinderExperiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = funFinderExperiment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		181B0B322290996400687277 /* funFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = funFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		181B0B352290996400687277 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		181B0B3A2290996400687277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		181B0B3D2290996400687277 /* funFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = funFinder.xcdatamodel; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		181B0B332290996400687277 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				181B0B322290996400687277 /* funFinderExperiment.app */,
+				181B0B322290996400687277 /* funFinder.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		181B0B312290996400687277 /* funFinderExperiment */ = {
+		181B0B312290996400687277 /* funFinder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 181B0B472290996500687277 /* Build configuration list for PBXNativeTarget "funFinderExperiment" */;
+			buildConfigurationList = 181B0B472290996500687277 /* Build configuration list for PBXNativeTarget "funFinder" */;
 			buildPhases = (
 				181B0B2E2290996400687277 /* Sources */,
 				181B0B2F2290996400687277 /* Frameworks */,
@@ -85,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = funFinderExperiment;
+			name = funFinder;
 			productName = funFinder;
-			productReference = 181B0B322290996400687277 /* funFinderExperiment.app */;
+			productReference = 181B0B322290996400687277 /* funFinder.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 181B0B2D2290996400687277 /* Build configuration list for PBXProject "funFinderExperiment" */;
+			buildConfigurationList = 181B0B2D2290996400687277 /* Build configuration list for PBXProject "funFinder" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,7 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				181B0B312290996400687277 /* funFinderExperiment */,
+				181B0B312290996400687277 /* funFinder */,
 			);
 		};
 /* End PBXProject section */
@@ -142,7 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				181B0B362290996400687277 /* AppDelegate.swift in Sources */,
-				181B0B4B2290A52700687277 /* AddPhotoViewController.swift in Sources */,
+				18FA74892293BA1800F0F3F6 /* AddPhotoViewController.swift in Sources */,
 				18F669622290D5C700E93110 /* PhotoTableViewController.swift in Sources */,
 				181B0B3E2290996400687277 /* funFinder.xcdatamodeld in Sources */,
 			);
@@ -298,7 +298,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.practice.funFinderExperiment;
+				PRODUCT_BUNDLE_IDENTIFIER = com.practice.funFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -318,7 +318,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.practice.funFinderExperiment;
+				PRODUCT_BUNDLE_IDENTIFIER = com.practice.funFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -329,7 +329,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		181B0B2D2290996400687277 /* Build configuration list for PBXProject "funFinderExperiment" */ = {
+		181B0B2D2290996400687277 /* Build configuration list for PBXProject "funFinder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				181B0B452290996500687277 /* Debug */,
@@ -338,7 +338,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		181B0B472290996500687277 /* Build configuration list for PBXNativeTarget "funFinderExperiment" */ = {
+		181B0B472290996500687277 /* Build configuration list for PBXNativeTarget "funFinder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				181B0B482290996500687277 /* Debug */,
