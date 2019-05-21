@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		181B0B322290996400687277 /* funFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = funFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		181B0B322290996400687277 /* funFinderExperiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = funFinderExperiment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		181B0B352290996400687277 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		181B0B3A2290996400687277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		181B0B3D2290996400687277 /* funFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = funFinder.xcdatamodel; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		181B0B332290996400687277 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				181B0B322290996400687277 /* funFinder.app */,
+				181B0B322290996400687277 /* funFinderExperiment.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		181B0B312290996400687277 /* funFinder */ = {
+		181B0B312290996400687277 /* funFinderExperiment */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 181B0B472290996500687277 /* Build configuration list for PBXNativeTarget "funFinder" */;
+			buildConfigurationList = 181B0B472290996500687277 /* Build configuration list for PBXNativeTarget "funFinderExperiment" */;
 			buildPhases = (
 				181B0B2E2290996400687277 /* Sources */,
 				181B0B2F2290996400687277 /* Frameworks */,
@@ -85,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = funFinder;
+			name = funFinderExperiment;
 			productName = funFinder;
-			productReference = 181B0B322290996400687277 /* funFinder.app */;
+			productReference = 181B0B322290996400687277 /* funFinderExperiment.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 181B0B2D2290996400687277 /* Build configuration list for PBXProject "funFinder" */;
+			buildConfigurationList = 181B0B2D2290996400687277 /* Build configuration list for PBXProject "funFinderExperiment" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,7 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				181B0B312290996400687277 /* funFinder */,
+				181B0B312290996400687277 /* funFinderExperiment */,
 			);
 		};
 /* End PBXProject section */
@@ -290,14 +290,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = funFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.practice.funFinder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.practice.funFinderExperiment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -307,14 +310,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = funFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.practice.funFinder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.practice.funFinderExperiment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -323,7 +329,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		181B0B2D2290996400687277 /* Build configuration list for PBXProject "funFinder" */ = {
+		181B0B2D2290996400687277 /* Build configuration list for PBXProject "funFinderExperiment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				181B0B452290996500687277 /* Debug */,
@@ -332,7 +338,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		181B0B472290996500687277 /* Build configuration list for PBXNativeTarget "funFinder" */ = {
+		181B0B472290996500687277 /* Build configuration list for PBXNativeTarget "funFinderExperiment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				181B0B482290996500687277 /* Debug */,
