@@ -10,7 +10,10 @@ import UIKit
 
 class PhotoDetailViewController: UIViewController {
 
-    @IBOutlet weak var photoDetail: UIImageView!
+    
+    @IBOutlet weak var photoDetailTwo: UIImageView!
+    
+    //@IBOutlet weak var photoDetail: UIImageView!
     
     var photo : Photos? = nil
     
@@ -20,9 +23,19 @@ class PhotoDetailViewController: UIViewController {
         if let realPhoto = photo {
             title = realPhoto.caption
             if let cellPhotoImageData = realPhoto.imageData {
+                //photoDetail.image = UIImage(data: cellPhotoImageData)
+
+                
                 if let cellPhotoImage = UIImage(data: cellPhotoImageData) {
-                    //photoDetail.image = cellPhotoImage
-                }
+                    
+                    print(cellPhotoImageData, "???")
+                    print (cellPhotoImage, "!!!")
+                    
+                    photoDetailTwo.image = cellPhotoImage
+                 //^causes Thread 1: Fatal error: Unexpectedly found nil while implicitly unwrapping an Optional value
+                 }
+                
+
             }
         }
 
@@ -36,7 +49,7 @@ class PhotoDetailViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-    }
+     }
     */
 
 }

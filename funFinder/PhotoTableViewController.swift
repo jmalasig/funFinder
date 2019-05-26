@@ -77,9 +77,9 @@ class PhotoTableViewController: UITableViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "detailSegue" {
-            if let photoDetailView = segue.destination as? PhotoDetailViewController {
+            if let photoDetail = segue.destination as? PhotoDetailViewController {
                 if let photoToSend = sender as? Photos {
-                    photoDetailView.photo = photoToSend
+                    photoDetail.photo = photoToSend
                 }
             }
         }

@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--funFinderExperiment-->
+        <!--funFinder-->
         <scene sceneID="ieA-70-akb">
             <objects>
                 <tableViewController id="rae-cC-AN6" customClass="PhotoTableViewController" customModule="funFinder" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,7 +36,7 @@
                             <outlet property="delegate" destination="rae-cC-AN6" id="MDq-9o-ZSQ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="funFinderExperiment" id="Y7E-d0-0YY">
+                    <navigationItem key="navigationItem" title="funFinder" id="Y7E-d0-0YY">
                         <barButtonItem key="backBarButtonItem" title="Back" id="rIX-Vq-S75"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="R92-lL-Qh0">
                             <connections>
@@ -121,9 +121,18 @@
                     <view key="view" contentMode="scaleToFill" id="Qga-q6-9a3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xPu-ff-P5J">
+                                <rect key="frame" x="87" y="168" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="xb4-p3-WAr"/>
                     </view>
+                    <connections>
+                        <outlet property="photoDetailTwo" destination="xPu-ff-P5J" id="Rxv-1v-nWD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i2F-qt-EdO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
