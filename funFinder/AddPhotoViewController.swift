@@ -27,7 +27,6 @@ class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
         super.viewDidLoad()
         imagePicker.delegate = self
         //everytime you get information, send it back to me please
-
         // Do any additional setup after loading the view.
     }
     
@@ -46,32 +45,18 @@ class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
         present(imagePicker, animated: true, completion: nil)
     }
     
- 
     @IBAction func savePhotoTapped(_ sender: UIButton) {
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
             let photoToSave = Photos(entity: Photos.entity(), insertInto: context)
             photoToSave.caption = captionText.text
-            
             if let userImage = imageView.image {
                 if let userImageData = userImage.pngData(){
                     photoToSave.imageData = userImageData
                 }
             }
             (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
-            
             navigationController?.popViewController(animated: true)
         }
     }
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -122,12 +122,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xPu-ff-P5J">
-                                <rect key="frame" x="87" y="168" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xPu-ff-P5J">
+                                <rect key="frame" x="67" y="138" width="280" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="Dfg-fc-cLL"/>
+                                    <constraint firstAttribute="height" constant="220" id="K6R-VR-0Jm"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xPu-ff-P5J" firstAttribute="centerX" secondItem="Qga-q6-9a3" secondAttribute="centerX" id="H9D-JN-50N"/>
+                            <constraint firstItem="xPu-ff-P5J" firstAttribute="centerY" secondItem="Qga-q6-9a3" secondAttribute="centerY" id="Jlr-UH-cpS"/>
+                            <constraint firstItem="xPu-ff-P5J" firstAttribute="top" secondItem="xb4-p3-WAr" secondAttribute="top" constant="50" id="PtZ-4B-UIb"/>
+                            <constraint firstItem="xPu-ff-P5J" firstAttribute="centerY" secondItem="Qga-q6-9a3" secondAttribute="centerY" id="j32-p8-8E5"/>
+                            <constraint firstItem="xPu-ff-P5J" firstAttribute="centerX" secondItem="Qga-q6-9a3" secondAttribute="centerX" id="t4y-Tb-yDa"/>
+                            <constraint firstItem="xPu-ff-P5J" firstAttribute="centerX" secondItem="Qga-q6-9a3" secondAttribute="centerX" id="wdM-m7-fcU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="xb4-p3-WAr"/>
                     </view>
                     <connections>
